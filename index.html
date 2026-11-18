@@ -1,0 +1,1177 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Barbearia Tezorine | Barbearia por assinatura em Manaus</title>
+<meta name="description" content="Barbearia Tezorine, barbearia por assinatura na Zona Sul de Manaus. Planos de corte, barba e corte e barba, sem fidelidade. Av. Silves, 1041, Raiz. Segunda a sábado, das 9h30 às 20h.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0A100C">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Barbearia Tezorine · Barbearia por assinatura em Manaus">
+<meta property="og:description" content="Cabelo e barba sempre alinhados pagando uma vez por mês. Planos a partir de R$ 74,90, sem fidelidade. Av. Silves, 1041, Raiz, Zona Sul.">
+<meta property="og:url" content="https://kevencatao.github.io/tezorine-previa/">
+<meta property="og:image" content="https://kevencatao.github.io/tezorine-previa/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preload" as="image" href="img/capa-corte.webp" type="image/webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600&display=swap">
+<style>
+/* Identidade da Tezorine (Instagram @barbeariatezorine e CashBarber):
+   preto com tom de verde, verde-esmeralda da logo, cartões verde-escuro e dourado dos planos.
+   Barlow Condensed = títulos e números (como o "BARBEARIA" dos posts); Barlow = texto e botões. */
+:root{
+  color-scheme:dark;
+  --chao:#0A100C;          /* fundo: preto esverdeado */
+  --chao-2:#0F1712;        /* faixa alternada */
+  --placa:#142019;         /* superfícies */
+  --placa-2:#1B2B22;
+  --osso:#F3F1EA;          /* texto */
+  --osso-2:#B9C2BA;        /* texto de apoio (9:1) */
+  --osso-3:#8F9A91;        /* rótulos (6:1) */
+  --linha:rgba(243,241,234,.11);
+  --linha-forte:rgba(243,241,234,.26);
+  --verde:#17804F;         /* verde da logo, um pouco mais fundo para o texto branco ler (4,9:1) */
+  --verde-2:#12693F;       /* hover: verde mais fundo (texto branco 7:1) */
+  --verde-logo:#1B8956;    /* verde exato da logo (só em superfícies sem texto) */
+  --verde-campo:#146F45;   /* campos verdes inteiros */
+  --verde-cartao:#0E2B1C;  /* cartões dos planos, como no post de assinatura */
+  --verde-tx:#3DC489;      /* verde como texto sobre o escuro */
+  --ouro:#EBB345;          /* dourado da tesoura e dos preços */
+  --ouro-2:#F4C766;
+  --sobre-verde:#FFFFFF;
+  --sobre-ouro:#14110A;
+  --papel:#F3F1EA;         /* barra clara da capa */
+  --tinta:#0E1611;
+  --tinta-2:#465249;
+
+  --f-display:"Barlow Condensed","Arial Narrow",system-ui,sans-serif;
+  --f-texto:"Barlow","Segoe UI",system-ui,-apple-system,sans-serif;
+
+  --gut:clamp(16px,4vw,56px);
+  --raio:10px;
+  --topo:64px;
+  --secao:clamp(60px,7.5vw,108px);
+}
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--topo) + 12px);-webkit-text-size-adjust:100%;scrollbar-color:#2C3A31 var(--chao)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--chao);color:var(--osso);font:400 1.0625rem/1.6 var(--f-texto);-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
+::selection{background:var(--verde-2);color:#fff}
+:focus-visible{outline:2px solid var(--ouro);outline-offset:3px}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit}
+h1,h2,h3,h4{margin:0;font-family:var(--f-display);font-weight:700;line-height:1.02;letter-spacing:.005em;text-wrap:balance}
+p{margin:0;text-wrap:pretty}
+ul,ol{margin:0;padding:0;list-style:none}
+figure,blockquote{margin:0}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
+
+/* ---------- estrutura ---------- */
+.wrap{width:100%;max-width:1360px;margin-inline:auto;padding-left:max(var(--gut),env(safe-area-inset-left,0px));padding-right:max(var(--gut),env(safe-area-inset-right,0px))}
+.secao{position:relative;padding-block:var(--secao)}
+.secao--2{background:var(--chao-2)}
+.h2{font-size:clamp(2.2rem,4.6vw,3.6rem);text-transform:uppercase}
+.h2 .destaque{display:block;color:var(--ouro)}
+.lead{color:var(--osso-2);max-width:54ch}
+.cab{display:grid;gap:14px;margin-bottom:clamp(26px,3.6vw,48px)}
+
+/* selo de conteúdo de exemplo (ainda não confirmado pela barbearia) */
+.selo-ex{display:inline-flex;align-items:center;gap:6px;margin-right:8px;padding:3px 9px 3px 8px;border:1px dashed var(--ouro);border-radius:999px;color:var(--ouro);font:600 .72rem/1.3 var(--f-texto);letter-spacing:.1em;text-transform:uppercase;vertical-align:.12em;white-space:nowrap}
+.selo-ex::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+
+/* ---------- botões ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:14px 24px;border:1px solid transparent;border-radius:999px;background:var(--verde);color:var(--sobre-verde);font:600 .84rem/1.15 var(--f-texto);letter-spacing:.12em;text-transform:uppercase;text-decoration:none;text-align:center;cursor:pointer;transition:background-color .2s ease,border-color .2s ease,color .2s ease,transform .2s cubic-bezier(.2,.8,.2,1),translate .35s cubic-bezier(.2,.8,.2,1)}
+.btn:hover{background:var(--verde-2)}
+.btn:active{transform:translateY(1px)}
+.btn svg{width:18px;height:18px;flex:none;transition:transform .2s cubic-bezier(.2,.8,.2,1)}
+.btn:hover .seta{transform:translateX(3px)}
+.btn--linha{background:transparent;border-color:var(--linha-forte);color:var(--osso)}
+.btn--linha:hover{background:rgba(243,241,234,.06);border-color:var(--osso)}
+.btn--ouro{background:var(--ouro);color:var(--sobre-ouro)}
+.btn--ouro:hover{background:var(--ouro-2)}
+.btn--claro{background:#fff;color:var(--verde-campo)}
+.btn--claro:hover{background:#EAF6EF}
+.btn--bloco{width:100%}
+.btn--peq{min-height:44px;padding:10px 16px;font-size:.76rem}
+.link{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0;border:0;background:none;font-weight:600;font-size:.98rem;text-decoration:underline;text-decoration-thickness:1px;text-decoration-color:var(--linha-forte);text-underline-offset:7px;cursor:pointer;transition:text-decoration-color .2s ease,gap .2s ease}
+.link:hover{text-decoration-color:var(--ouro);gap:12px}
+.link svg{width:16px;height:16px;flex:none}
+.quadrado{display:grid;place-items:center;width:44px;height:44px;flex:none;border:1px solid var(--linha-forte);border-radius:var(--raio);background:var(--chao);text-decoration:none;cursor:pointer;transition:border-color .2s ease,background-color .2s ease}
+.quadrado:hover{border-color:var(--osso);background:var(--placa)}
+.quadrado svg{width:18px;height:18px}
+
+/* ---------- aviso da prévia e cabeçalho ---------- */
+.aviso-demo{background:var(--chao);border-bottom:1px solid var(--linha);color:var(--osso-2);font-size:.8rem;line-height:1.5;text-align:center;padding-block:8px}
+.aviso-demo .selo-ex{margin:0 2px;padding-block:1px;font-size:.7rem}
+.topo{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(10,16,12,.94);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--linha)}
+.topo-linha{display:flex;align-items:center;gap:20px;min-height:var(--topo)}
+.marca{display:inline-flex;align-items:center;gap:11px;text-decoration:none}
+.marca .icone{width:38px;height:38px;border-radius:9px}
+.marca .letreiro{width:auto;height:22px}
+.menu{display:none}
+.topo-acoes{margin-left:auto;display:flex;align-items:center;gap:14px}
+.relogio{display:inline-flex;align-items:center;gap:8px;font:600 1.05rem/1 var(--f-display);font-variant-numeric:tabular-nums;letter-spacing:.04em;color:var(--osso-2)}
+.relogio small{font:500 .74rem/1 var(--f-texto);letter-spacing:.06em;text-transform:uppercase;color:var(--osso-3)}
+.ponto-vivo{width:8px;height:8px;flex:none;border-radius:50%;background:var(--verde-tx);box-shadow:0 0 0 3px rgba(61,196,137,.18)}
+.ponto-vivo.fechado{background:var(--osso-3);box-shadow:none}
+.menu-btn{min-height:44px;padding:0 16px;border:1px solid var(--linha-forte);border-radius:999px;background:none;font:600 .9rem/1 var(--f-texto);cursor:pointer}
+@media (max-width:959px){
+  .topo-acoes .btn{display:none}
+  .relogio small{display:none}
+  .topo.aberto .menu{display:grid;position:absolute;left:0;right:0;top:100%;background:var(--chao);border-bottom:1px solid var(--linha-forte);padding:4px max(var(--gut),env(safe-area-inset-right,0px)) 20px max(var(--gut),env(safe-area-inset-left,0px))}
+  .menu a{display:block;padding-block:14px;border-bottom:1px solid var(--linha);font:700 1.9rem/1 var(--f-display);text-transform:uppercase;text-decoration:none}
+}
+@media (max-width:420px){.marca .letreiro{height:19px}.relogio{font-size:.98rem}}
+@media (min-width:960px){
+  :root{--topo:72px}
+  .marca .icone{width:42px;height:42px}
+  .marca .letreiro{height:25px}
+  .menu{display:flex;gap:30px;margin-left:28px}
+  .menu a{position:relative;padding-block:12px;color:var(--osso-2);font-size:.95rem;font-weight:500;text-decoration:none;transition:color .2s ease}
+  .menu a:hover,.menu a[aria-current="true"]{color:var(--osso)}
+  .menu a[aria-current="true"]::after{content:"";position:absolute;left:0;right:0;bottom:4px;height:2px;background:var(--verde-tx)}
+  .menu-btn{display:none}
+  .topo-acoes .btn{min-height:44px;padding:10px 20px}
+}
+
+/* ---------- capa: foto, título e barra de informações ---------- */
+.capa{position:relative;isolation:isolate;overflow:hidden;display:flex;flex-direction:column;padding-block:clamp(40px,5.5vw,84px) clamp(32px,4vw,64px)}
+.capa-foto{position:relative;order:2;height:min(78vw,440px);margin:32px max(var(--gut),env(safe-area-inset-right,0px)) 0 max(var(--gut),env(safe-area-inset-left,0px));overflow:hidden;border-radius:20px}
+.capa-foto img{width:100%;height:100%;object-fit:cover;object-position:22% 40%;transform:perspective(1400px) rotateY(var(--ry,0deg)) rotateX(var(--rx,0deg)) scale(1.05);transition:transform 1s cubic-bezier(.2,.8,.2,1)}
+.capa-fundo{position:absolute;inset:0;z-index:-2;margin:0;pointer-events:none}
+.capa-fundo img{width:100%;height:100%;object-fit:cover;object-position:50% 45%;opacity:.28}
+.capa-fundo::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,16,12,.6) 0%,rgba(10,16,12,.76) 50%,rgba(10,16,12,.5) 100%),linear-gradient(0deg,var(--chao) 0%,rgba(10,16,12,0) 45%)}
+.capa-grade{display:grid;gap:24px}
+.capa-grade>*{min-width:0}
+.capa-tit{font-size:clamp(3rem,8.4vw,6.6rem);line-height:.92;font-weight:800;letter-spacing:0;text-transform:uppercase}
+.capa-tit span{display:block;color:var(--ouro)}
+.capa-lead{color:var(--osso);opacity:.88;max-width:46ch;font-size:1.12rem}
+.ctas{display:flex;flex-wrap:wrap;align-items:center;gap:12px 24px}
+
+/* barra de informações reais (status de agora, endereço, planos) + agendar */
+.info-barra{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1fr);margin-top:6px;padding:6px;border-radius:18px;background:var(--papel);color:var(--tinta);box-shadow:0 44px 80px -40px rgba(0,0,0,.95)}
+.info-campo{display:grid;gap:6px;align-content:center;min-width:0;padding:12px 14px;border-bottom:1px solid rgba(14,22,17,.13);text-decoration:none}
+.info-campo>span:first-child{color:var(--tinta-2);font:600 .74rem/1 var(--f-texto);letter-spacing:.08em;text-transform:uppercase}
+.info-campo b{display:flex;align-items:center;gap:9px;font:700 1.32rem/1.1 var(--f-display);letter-spacing:.01em}
+.info-campo b i{width:9px;height:9px;flex:none;border-radius:50%;background:#7C877F}
+.info-campo b i.aberto{background:#16A05D;box-shadow:0 0 0 4px rgba(22,160,93,.18)}
+.info-campo small{color:var(--tinta-2);font-size:.86rem;font-weight:500}
+a.info-campo:hover b{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px}
+.info-campo:nth-last-child(2){border-bottom:0}
+.info-barra .btn{min-height:58px;margin-top:6px;border-radius:12px}
+.capa-provas{display:flex;flex-wrap:wrap;align-items:center;gap:10px 26px;color:var(--osso-2);font-size:.95rem}
+.capa-provas li{display:flex;align-items:center;gap:8px}
+.capa-provas li svg{width:17px;height:17px;color:var(--verde-tx)}
+.capa-provas .link{min-height:0;font-size:.95rem}
+@media (min-width:760px){
+  .info-barra{grid-template-columns:minmax(0,1.15fr) minmax(0,1.15fr) minmax(0,1fr) auto;align-items:stretch}
+  .info-campo{padding:10px 18px;border-bottom:0;border-right:1px solid rgba(14,22,17,.13)}
+  .info-campo:nth-last-child(2){border-right:0}
+  .info-barra .btn{min-height:0;margin:0 0 0 6px;padding-inline:28px}
+}
+@media (min-width:1100px){
+  .capa{display:block}
+  .capa-foto{position:absolute;z-index:-1;top:0;right:0;bottom:0;width:40vw;height:auto;margin:0;border-radius:0}
+  .capa-foto::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,16,12,.8) 0,rgba(10,16,12,0) 24%)}
+  .capa-grade{grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;row-gap:28px}
+  .capa-tit{grid-column:1/span 7}
+  .capa-lead{grid-column:1/span 6}
+  .info-barra{grid-column:1/span 9}
+  .capa-provas{grid-column:1/span 8}
+}
+@media (min-width:1360px){.info-barra{grid-column:1/span 8}}
+
+/* ---------- planos: cartões verde-escuro com dourado, como no post da assinatura ---------- */
+.planos{position:relative;isolation:isolate;overflow:hidden}
+.carteiras{display:grid;gap:16px}
+.carteira{position:relative;display:grid;gap:18px;align-content:start;padding:24px 22px 24px;border:1px solid rgba(235,179,69,.22);border-radius:20px;background:linear-gradient(180deg,#123623 0%,var(--verde-cartao) 100%);box-shadow:0 40px 70px -40px rgba(0,0,0,.95);transform:perspective(900px) translateY(var(--ty,0px)) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+.carteira-ico{width:46px;height:46px;color:var(--ouro)}
+.carteira h3{font-size:clamp(1.8rem,2.4vw,2.2rem);text-transform:uppercase}
+.carteira h3 small{display:block;margin-bottom:4px;color:var(--osso-2);font:600 .76rem/1 var(--f-texto);letter-spacing:.16em}
+.carteira-preco{display:flex;align-items:baseline;gap:6px;font-family:var(--f-display)}
+.carteira-preco small{font-size:1.2rem;font-weight:600}
+.carteira-preco b{font-size:4rem;font-weight:700;line-height:.9;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+.carteira-preco span{font-family:var(--f-texto);font-size:.92rem;color:var(--osso-2)}
+.carteira ul{display:grid;gap:10px;padding-top:16px;border-top:1px solid var(--linha);font-size:.98rem}
+.carteira li{display:grid;grid-template-columns:20px minmax(0,1fr);gap:10px}
+.carteira li svg{width:18px;height:18px;margin-top:3px;color:var(--verde-tx)}
+.carteira .btn{margin-top:4px}
+.carteira-pe{display:flex;justify-content:space-between;gap:12px;padding-top:14px;border-top:1px dashed var(--linha-forte);color:var(--osso-3);font:600 .74rem/1.3 var(--f-texto);letter-spacing:.08em;text-transform:uppercase}
+.carteira-pe b{color:var(--ouro);font-weight:600}
+.carteira::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:0;background:radial-gradient(420px circle at var(--mx,50%) var(--my,50%),rgba(255,236,190,.12),transparent 55%);transition:opacity .4s ease}
+.carteira.inclinada::after{opacity:1}
+.carteira--destaque{border:1.5px solid var(--ouro)}
+.carteira--destaque .carteira-preco b,.carteira--destaque .carteira-preco small{color:var(--ouro)}
+.carimbo{position:absolute;top:-16px;right:18px;padding:7px 12px 6px;border-radius:999px;background:var(--ouro);color:var(--sobre-ouro);font:700 .76rem/1 var(--f-texto);letter-spacing:.12em;text-transform:uppercase}
+.carimbo.pre{opacity:0}
+.carimbado .carimbo{animation:carimbar .45s cubic-bezier(.3,1.4,.5,1) both}
+@keyframes carimbar{0%{opacity:0;transform:translateY(-8px) scale(1.4)}100%{opacity:1;transform:none}}
+@media (min-width:900px){.carteiras{grid-template-columns:repeat(3,minmax(0,1fr));align-items:start}.carteira{padding:28px 26px 28px}.carteira--destaque{--ty:-16px}}
+
+/* faixa de vantagens da assinatura (as quatro do post) */
+.vantagens{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;margin-top:clamp(28px,3.4vw,44px);overflow:hidden;border:1px solid var(--linha-forte);border-radius:18px;background:var(--linha)}
+.vantagem{display:grid;grid-template-columns:34px minmax(0,1fr);align-items:center;gap:12px;padding:16px 18px;background:var(--chao)}
+.vantagem svg{width:30px;height:30px;color:var(--ouro)}
+.vantagem b{display:block;font:700 1.12rem/1.1 var(--f-display);text-transform:uppercase;letter-spacing:.02em}
+.vantagem span{display:block;margin-top:2px;color:var(--osso-2);font-size:.86rem;line-height:1.35}
+@media (min-width:900px){.vantagens{grid-template-columns:repeat(4,minmax(0,1fr))}.vantagem{padding:20px 22px}}
+
+/* comanda: plano x avulso, em barras */
+.comanda{display:grid;gap:26px;margin-top:20px;padding:clamp(22px,3vw,40px);border-radius:20px;background:var(--papel);color:var(--tinta);box-shadow:0 40px 70px -40px rgba(0,0,0,.95)}
+.comanda .selo-ex{border-color:#8A5B07;color:#8A5B07}
+.comanda-cab{display:grid;gap:8px}
+.comanda h3{font-size:clamp(1.7rem,2.4vw,2.1rem);text-transform:uppercase}
+.comanda-cab p{color:var(--tinta-2)}
+.calc-escolhas{display:grid;gap:22px;align-content:start;min-width:0}
+.calc-grupo{display:grid;gap:10px;min-width:0}
+.calc-grupo>span{color:var(--tinta-2);font:600 .76rem/1 var(--f-texto);letter-spacing:.08em;text-transform:uppercase}
+.segmentos{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;gap:4px;padding:4px;border-radius:14px;background:rgba(14,22,17,.07)}
+.opcao{min-height:44px;padding:8px 10px;border:0;border-radius:10px;background:transparent;color:var(--tinta);font-size:.92rem;font-weight:600;line-height:1.2;cursor:pointer;transition:background-color .2s ease,color .2s ease}
+.opcao:hover{background:rgba(14,22,17,.07)}
+.opcao[aria-checked="true"]{background:var(--verde);color:#fff}
+.opcao:focus-visible{outline-color:var(--tinta)}
+.calc-dica{color:var(--tinta-2);font-size:.86rem}
+.calc-res{display:grid;gap:20px;align-content:start;padding-top:22px;border-top:1px dashed rgba(14,22,17,.3);min-width:0}
+.barra{display:grid;gap:9px}
+.barra-topo{display:flex;justify-content:space-between;align-items:baseline;gap:12px;font-size:.95rem}
+.barra-topo span{color:var(--tinta-2)}
+.barra-topo b{font:700 1.3rem/1 var(--f-display);white-space:nowrap;font-variant-numeric:tabular-nums}
+.barra-trilho{height:12px;border-radius:999px;background:rgba(14,22,17,.08);overflow:hidden}
+.barra-trilho i{display:block;width:var(--w,0%);height:100%;border-radius:inherit;background:#8C958E;transition:width .6s cubic-bezier(.2,.8,.2,1)}
+.barra--plano .barra-trilho i{background:var(--verde)}
+.calc-eco{font:700 clamp(1.4rem,2.2vw,1.75rem)/1.2 var(--f-display);text-transform:uppercase;letter-spacing:.01em}
+.calc-eco b{color:var(--verde);font-weight:800}
+.calc-eco.neutro{font-size:1.15rem;font-weight:600;text-transform:none}
+.letra-miuda{margin-top:20px;color:var(--osso-2);font-size:.9rem}
+@media (min-width:900px){.comanda{grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:56px}.comanda-cab{grid-column:1/-1}.calc-res{padding:0 0 0 56px;border-top:0;border-left:1px dashed rgba(14,22,17,.3)}}
+
+/* ---------- serviços: um cartão por categoria ---------- */
+.cats{display:grid;gap:14px;align-items:stretch}
+.cat{display:grid;align-content:start;padding:8px 8px 10px;border:1px solid var(--linha);border-radius:20px;background:var(--placa)}
+.cat-cab{display:flex;align-items:center;gap:12px;padding:12px 12px 14px;border-bottom:1px solid var(--linha)}
+.cat-ico{display:grid;place-items:center;width:38px;height:38px;flex:none;border-radius:50%;background:rgba(235,179,69,.13);color:var(--ouro)}
+.cat-ico svg{width:20px;height:20px}
+.cat-cab h3{font-size:1.45rem;text-transform:uppercase;letter-spacing:.02em}
+.cat-lista{display:grid;padding-top:4px}
+.cat-item{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:12px;min-height:50px;padding:8px 12px;border-radius:12px}
+.cat-item+.cat-item{border-top:1px solid var(--linha)}
+.ci-nome{font-size:1rem;font-weight:500;line-height:1.3}
+.ci-nome em{display:block;margin-top:3px;color:var(--verde-tx);font:600 .7rem/1.2 var(--f-texto);font-style:normal;letter-spacing:.08em;text-transform:uppercase}
+.ci-preco{font:600 1.15rem/1 var(--f-display);white-space:nowrap;color:var(--osso);font-variant-numeric:tabular-nums}
+.nota{display:flex;flex-wrap:wrap;align-items:center;gap:6px 18px;margin-top:18px;color:var(--osso-2);font-size:.94rem}
+@media (min-width:640px){.cats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1120px){.cats{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}}
+
+/* ---------- campos verdes (cor da logo): redefinem os tokens localmente ---------- */
+.secao--verde{--chao:var(--verde-campo);--chao-2:#126641;--placa:#105F3C;--placa-2:#0D5233;--osso:#FFFFFF;--osso-2:#E0EFE6;--osso-3:#D2E6DA;--linha:rgba(255,255,255,.18);--linha-forte:rgba(255,255,255,.42);--verde-tx:#FFFFFF;background:var(--verde-campo);color:#fff}
+.secao--verde .selo-ex{border-color:#FFE3A3;color:#FFE3A3}
+.secao--verde ::selection{background:#fff;color:var(--verde-campo)}
+.secao--verde .btn{background:#fff;color:var(--verde-campo)}
+.secao--verde .btn:hover{background:#EAF6EF}
+.secao--verde .btn--linha{background:transparent;color:#fff;border-color:rgba(255,255,255,.6)}
+.secao--verde .btn--linha:hover{background:rgba(255,255,255,.1);border-color:#fff}
+
+/* ---------- extras de graça (exemplo): faixa baixa, três itens lado a lado ---------- */
+.extras{padding-block:clamp(40px,4vw,56px)}
+.extras .cab{gap:8px;margin-bottom:clamp(18px,2vw,26px)}
+.extras-grade{display:grid;gap:8px}
+.extra{display:grid;grid-template-columns:44px minmax(0,1fr);column-gap:14px;row-gap:3px;align-content:center;padding:14px 16px;border:1px solid var(--linha);border-radius:16px;background:var(--placa)}
+.extra-ico{grid-row:1/4;align-self:center;display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--chao-2);border:1px solid var(--linha-forte);color:#FFE3A3}
+.extra-ico svg{width:22px;height:22px}
+.extra-gratis{color:#FFE3A3;font:600 .74rem/1 var(--f-texto);letter-spacing:.08em;text-transform:uppercase}
+.extra h3{font-size:1.3rem;text-transform:uppercase;letter-spacing:.01em}
+.extra p{color:var(--osso-2);font-size:.92rem;line-height:1.4}
+@media (min-width:700px){
+  .extras-grade{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+  .extra{grid-template-columns:40px minmax(0,1fr);column-gap:12px;row-gap:4px;align-content:start;padding:16px 18px}
+  .extra-ico{grid-row:auto;width:40px;height:40px;margin-bottom:8px}
+  .extra-gratis{align-self:center;margin-bottom:8px}
+  .extra h3,.extra p{grid-column:1/-1}
+}
+@media (min-width:1120px){
+  .extra{grid-template-columns:48px minmax(0,1fr);column-gap:16px;row-gap:3px;align-content:center;padding:18px 20px}
+  .extra-ico{grid-row:1/4;width:48px;height:48px;margin:0}
+  .extra-gratis{align-self:end;margin:0}
+  .extra h3,.extra p{grid-column:2}
+}
+
+/* ---------- galeria em mosaico (fotos do Instagram) ---------- */
+.mosaico{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 12px;align-items:start}
+.mosaico figure{min-width:0}
+.mosaico button{display:block;width:100%;padding:0;border:0;border-radius:16px;background:var(--placa);overflow:hidden;cursor:zoom-in;transition:transform 1.1s cubic-bezier(.2,.8,.2,1)}
+.mosaico img{width:100%;aspect-ratio:4/5;object-fit:cover;transition:transform .7s cubic-bezier(.2,.8,.2,1)}
+.mosaico button:hover img{transform:scale(1.035)}
+.mosaico figcaption{display:grid;gap:2px;padding-top:12px;font-size:.95rem;line-height:1.35}
+.mosaico figcaption b{font:700 1.15rem/1.1 var(--f-display);text-transform:uppercase;letter-spacing:.02em}
+.mosaico figcaption span{color:var(--osso-3);font-size:.86rem}
+.mcol{display:contents}
+.m1{grid-column:1/-1;order:1}.m2{order:2}.m3{order:3;margin-top:40px}.m4{order:4}.m5{order:5;margin-top:40px}.m6{order:6}
+.mosaico-ig{order:7;grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;padding-top:18px;border-top:1px solid var(--linha);font:700 clamp(1.5rem,2.6vw,2rem)/1.05 var(--f-display);text-transform:uppercase;text-decoration:none}
+.mosaico-ig span{font:500 .98rem/1 var(--f-texto);text-transform:none;color:var(--osso-2)}
+.mosaico-ig svg{width:26px;height:26px;align-self:center;transition:transform .2s cubic-bezier(.2,.8,.2,1)}
+.mosaico-ig:hover svg{transform:translateX(4px)}
+@media (min-width:900px){
+  .mosaico{grid-template-columns:minmax(0,5fr) minmax(0,3fr) minmax(0,3fr);gap:0 clamp(20px,2.4vw,36px)}
+  .mcol{display:grid;gap:52px;align-content:start}
+  .mcol2{padding-top:132px}
+  .mcol3{padding-top:24px}
+  .mcol .m{margin-top:0}
+  .m6{width:78%;justify-self:end}
+  .m6 img{aspect-ratio:1/1}
+  .m2 img,.m4 img{aspect-ratio:3/4}
+}
+
+/* ---------- garantia (exemplo): três horários em cartões baixos ---------- */
+.gar-exemplo{margin-bottom:12px;color:var(--osso-3);font:600 .78rem/1 var(--f-texto);letter-spacing:.08em;text-transform:uppercase}
+.passos-gar{display:grid;gap:12px}
+.passo-gar{position:relative;display:grid;grid-template-columns:auto minmax(0,1fr);align-items:center;column-gap:18px;padding:16px 20px;border:1px solid var(--linha);border-radius:16px;background:var(--placa)}
+.pg-hora{padding-right:18px;border-right:1px solid var(--linha-forte);font:700 1.7rem/1 var(--f-display);font-variant-numeric:tabular-nums;color:var(--osso)}
+.passo-gar h3{font-size:1.25rem;text-transform:uppercase;letter-spacing:.02em}
+.passo-gar p{margin-top:3px;color:var(--osso-2);font-size:.92rem;line-height:1.4}
+.passo-gar--gratis{border-color:var(--verde-campo);background:var(--verde-campo);color:#fff}
+.passo-gar--gratis .pg-hora{color:#fff;border-color:rgba(255,255,255,.35)}
+.passo-gar--gratis p{color:#E0EFE6}
+.passo-gar:not(:last-child)::after{content:"";position:absolute;left:44px;bottom:-11px;z-index:1;width:9px;height:9px;border-right:1.5px solid var(--osso-3);border-bottom:1.5px solid var(--osso-3);background:var(--chao-2);transform:rotate(45deg)}
+@media (min-width:760px){
+  .passos-gar{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+  .passo-gar:not(:last-child)::after{left:auto;right:-14px;bottom:auto;top:50%;margin-top:-4.5px;transform:rotate(-45deg)}
+}
+.gar-rodape{display:flex;flex-wrap:wrap;align-items:center;gap:14px 24px;margin-top:26px;padding-top:24px;border-top:1px solid var(--linha)}
+.gar-nota{color:var(--osso-3);font-size:.9rem}
+
+/* ---------- carrosséis (só no celular) ---------- */
+.carrossel{scrollbar-width:none}
+.carrossel::-webkit-scrollbar{display:none}
+.pontos{display:none}
+@media (max-width:899px){
+  .carrossel{display:grid;grid-auto-flow:column;grid-auto-columns:84%;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin-left:calc(-1 * max(var(--gut),env(safe-area-inset-left,0px)));margin-right:calc(-1 * max(var(--gut),env(safe-area-inset-right,0px)));padding:24px max(var(--gut),env(safe-area-inset-right,0px)) 8px max(var(--gut),env(safe-area-inset-left,0px));scroll-padding-inline:max(var(--gut),env(safe-area-inset-left,0px))}
+  .carrossel>*{scroll-snap-align:start;min-width:0}
+  .barbeiros.carrossel{grid-auto-columns:76%}
+  .pontos{display:flex;justify-content:center;gap:2px;margin-top:12px}
+  .pontos button{display:grid;place-items:center;width:28px;height:28px;padding:0;border:0;background:none;cursor:pointer}
+  .pontos button::before{content:"";width:6px;height:6px;border-radius:1px;background:var(--linha-forte);transition:width .2s ease,background-color .2s ease}
+  .pontos button[aria-current="true"]::before{width:20px;background:var(--osso)}
+}
+
+/* ---------- equipe (exemplo) ---------- */
+.barbeiros{display:grid;gap:44px 24px}
+.barbeiro{display:grid;align-content:start}
+.barbeiro figure{overflow:hidden;border-radius:16px;background:var(--placa)}
+.barbeiro img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 22%;transition:transform .7s cubic-bezier(.2,.8,.2,1)}
+.barbeiro:hover img{transform:scale(1.03)}
+.barbeiro h3{margin-top:18px;font-size:clamp(1.6rem,2vw,1.9rem);text-transform:uppercase}
+.barbeiro>p{margin-top:6px;color:var(--osso-2)}
+.barbeiro .meta{margin-top:8px;color:var(--osso-3);font-size:.88rem}
+.barbeiro .meta b{color:var(--osso);font-weight:600}
+.barbeiro .link{justify-self:start;margin-top:6px}
+@media (min-width:900px){.barbeiros{grid-template-columns:repeat(3,minmax(0,1fr))}.barbeiro:nth-child(3n+2){margin-top:56px}}
+
+/* ---------- avaliações (exemplo): três cartões ---------- */
+.depos{display:grid;gap:14px}
+.depo{display:grid;gap:18px;align-content:space-between;padding:26px;border:1px solid var(--linha);border-radius:18px;background:var(--placa)}
+.depo blockquote{font:500 clamp(1.25rem,1.6vw,1.45rem)/1.3 var(--f-display);letter-spacing:.005em}
+.depo figcaption{color:var(--osso-3);font-size:.9rem}
+.depo figcaption b{color:var(--osso);font-weight:600}
+.estrelas{display:flex;gap:3px;color:var(--ouro)}
+.estrelas svg{width:15px;height:15px}
+@media (min-width:900px){.depos{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}}
+
+/* ---------- localização: mapa do Google e cartão da unidade ---------- */
+.local-grade{display:grid;gap:18px}
+.local-grade>*{min-width:0}
+.mapa{position:relative;align-self:start;margin:0;overflow:hidden;aspect-ratio:4/3;border:1px solid var(--linha);border-radius:20px;background:#17211B}
+.mapa iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:invert(.9) hue-rotate(180deg) saturate(.55) brightness(.95) contrast(.92)}
+.local-info{display:grid;gap:14px;align-content:start}
+.google-nota{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;padding:18px 20px;border:1px dashed var(--linha-forte);border-radius:18px;background:var(--placa)}
+.google-nota>b{font:700 3rem/1 var(--f-display)}
+.google-nota div{display:grid;gap:5px}
+.google-nota p{color:var(--osso-2);font-size:.9rem}
+.local-card{display:grid;gap:14px;padding:22px;border:1px solid var(--linha);border-radius:18px;background:var(--placa)}
+.local-topo{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px}
+.local-card h3{font-size:clamp(1.7rem,2.2vw,2rem);text-transform:uppercase}
+.status{display:inline-flex;align-items:center;gap:9px;color:var(--osso-2);font-size:.92rem;font-weight:600}
+.status i{width:8px;height:8px;flex:none;border-radius:50%;background:var(--osso-3)}
+.status.aberto{color:var(--osso)}
+.status.aberto i{background:var(--verde-tx)}
+.local-card address{font-style:normal;color:var(--osso-2)}
+.horas-tab{display:grid;font-size:.94rem;font-variant-numeric:tabular-nums}
+.horas-tab div{display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid var(--linha)}
+.horas-tab div:last-child{border-bottom:0}
+.horas-tab .hoje{color:var(--osso);font-weight:600}
+.local-card .info{color:var(--osso-3);font-size:.9rem}
+.local-card .acoes{display:flex;flex-wrap:wrap;gap:10px}
+@media (min-width:1000px){.local-grade{grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:24px}.mapa{aspect-ratio:auto;height:100%;min-height:440px}}
+
+/* ---------- dúvidas ---------- */
+.faq-grade{display:grid;gap:28px}
+.faq-grade>*{min-width:0}
+.faq{border-top:1px solid var(--linha-forte)}
+.faq details{border-bottom:1px solid var(--linha)}
+.faq summary{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;padding:16px 0;list-style:none;cursor:pointer;font-size:1.1rem;font-weight:600;transition:color .2s ease}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary .selo-ex{margin:0 0 0 8px}
+.faq summary i{position:relative;flex:none;width:32px;height:32px;border:1px solid var(--linha-forte);border-radius:var(--raio);transition:transform .25s cubic-bezier(.2,.8,.2,1),background-color .2s ease,border-color .2s ease}
+.faq summary i::before,.faq summary i::after{content:"";position:absolute;left:50%;top:50%;width:11px;height:1.5px;background:currentColor;transform:translate(-50%,-50%)}
+.faq summary i::after{transform:translate(-50%,-50%) rotate(90deg)}
+.faq details[open] summary i{transform:rotate(45deg);background:var(--verde);border-color:var(--verde);color:#fff}
+.faq details p{max-width:62ch;padding:0 44px 22px 0;color:var(--osso-2)}
+@media (min-width:960px){.faq-grade{grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:64px}.faq-grade .cab{position:sticky;top:calc(var(--topo) + 36px);align-self:start}}
+
+/* ---------- fechamento: campo verde com a logo ---------- */
+.final{position:relative;isolation:isolate;overflow:hidden;background:radial-gradient(120% 90% at 85% 50%,var(--verde-campo) 0%,#115F3B 60%,#0D4C2F 100%);color:#fff}
+.final-grade{display:grid;gap:40px;align-items:center;padding-block:clamp(80px,11vw,150px)}
+.final-grade>*{min-width:0}
+.final h2{font-size:clamp(2.8rem,6.6vw,5.4rem);line-height:.92;text-transform:uppercase}
+.final h2 span{display:block;color:#FFE3A3}
+.final-txt>p{margin-top:22px;max-width:44ch;color:#E0EFE6;font-size:1.08rem}
+.final .ctas{margin-top:30px}
+.final .btn{background:#fff;color:var(--verde-campo)}
+.final .btn:hover{background:#EAF6EF}
+.final .link{text-decoration-color:rgba(255,255,255,.5)}
+.final .link:hover{text-decoration-color:#fff}
+.final-logo{justify-self:center;width:min(320px,62vw);border-radius:22%;box-shadow:0 50px 90px -40px rgba(0,0,0,.7);transform:rotate(-4deg)}
+@media (min-width:1000px){.final-grade{grid-template-columns:minmax(0,7fr) minmax(0,5fr);column-gap:64px}.final-logo{width:360px}}
+
+/* ---------- rodapé ---------- */
+.rodape{padding-block:56px 28px;border-top:1px solid var(--linha);color:var(--osso-2);font-size:.94rem}
+.rodape-grade{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 20px}
+.rodape-grade>:first-child,.rodape-grade>.largo{grid-column:1/-1}
+.rodape h3{margin-bottom:14px;color:var(--osso);font:600 .78rem/1 var(--f-texto);letter-spacing:.1em;text-transform:uppercase}
+.rodape ul{display:grid;gap:10px}
+.rodape a{text-decoration:none;transition:color .2s ease}
+.rodape a:hover{color:var(--osso)}
+.rodape .marca{margin-bottom:16px}
+.rodape li b{color:var(--osso);font-weight:600}
+.sociais{display:flex;gap:8px;margin-top:18px}
+.rodape-fim{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 24px;margin-top:40px;padding-top:20px;border-top:1px solid var(--linha);color:var(--osso-3);font-size:.84rem}
+@media (min-width:1000px){.rodape-grade{grid-template-columns:1.4fr 1fr 1fr 1fr}.rodape-grade>:first-child,.rodape-grade>.largo{grid-column:auto}}
+
+/* ---------- botão flutuante ---------- */
+.flutua{position:fixed;z-index:45;left:0;right:0;bottom:0;display:flex;gap:8px;padding:10px max(var(--gut),env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(var(--gut),env(safe-area-inset-left,0px));pointer-events:none;transition:transform .35s cubic-bezier(.2,.8,.2,1),opacity .35s ease}
+.flutua>*{pointer-events:auto}
+.flutua.oculto{transform:translateY(140%);opacity:0}
+.flutua.oculto>*{pointer-events:none}
+.fab{flex:1;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:12px 22px;border:0;border-radius:999px;background:var(--verde);color:#fff;font:600 .84rem/1.15 var(--f-texto);letter-spacing:.12em;text-transform:uppercase;text-decoration:none;cursor:pointer;box-shadow:0 20px 44px -18px rgba(0,0,0,.95);transition:background-color .2s ease,color .2s ease,translate .35s cubic-bezier(.2,.8,.2,1)}
+.fab:hover{background:var(--verde-2)}
+.fab svg{width:20px;height:20px}
+.flutua.sobre-verde .fab{background:#fff;color:var(--verde-campo)}
+.flutua .quadrado{width:54px;height:54px;border-radius:999px;background:rgba(16,24,19,.96);box-shadow:0 20px 44px -18px rgba(0,0,0,.95)}
+body{padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))}
+@media (min-width:760px){.flutua{left:auto;right:max(24px,env(safe-area-inset-right,0px));bottom:max(24px,env(safe-area-inset-bottom,0px));padding:0}.fab{flex:none}body{padding-bottom:0}}
+
+/* ---------- foto ampliada ---------- */
+.lightbox{position:fixed;inset:0;z-index:90;display:grid;grid-template-rows:auto minmax(0,1fr) auto;background:rgba(6,10,8,.97);padding:calc(10px + env(safe-area-inset-top,0px)) max(var(--gut),env(safe-area-inset-right,0px)) calc(14px + env(safe-area-inset-bottom,0px)) max(var(--gut),env(safe-area-inset-left,0px))}
+.lb-topo{display:flex;align-items:center;justify-content:space-between;min-height:56px;color:var(--osso-3);font:600 1rem/1 var(--f-display);letter-spacing:.06em}
+.lb-img{display:grid;place-items:center;min-height:0}
+.lb-img img{max-width:100%;max-height:100%;object-fit:contain}
+.lb-base{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:12px}
+.lb-base p{font:700 1.4rem/1.1 var(--f-display);text-transform:uppercase}
+.lb-base p span{display:block;margin-top:4px;color:var(--osso-3);font:400 .88rem/1.3 var(--f-texto);text-transform:none}
+.lb-nav{display:flex;gap:8px}
+</style>
+</head>
+<body>
+
+<div class="aviso-demo" id="avisoPrevia"><div class="wrap">Prévia de site para a Barbearia Tezorine. O que está marcado com <span class="selo-ex">Exemplo</span> ainda precisa ser confirmado pela barbearia.</div></div>
+
+<header class="topo" id="topo">
+  <div class="wrap">
+  <div class="topo-linha">
+    <a class="marca" href="#inicio" aria-label="Barbearia Tezorine, início">
+      <img class="icone" src="img/logo-icone.webp" width="176" height="176" alt="">
+      <img class="letreiro" src="img/logo-letreiro.webp" width="590" height="130" alt="">
+    </a>
+    <nav class="menu" id="menu" aria-label="Seções do site">
+      <a href="#planos">Planos</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#galeria">Fotos</a>
+      <a href="#endereco">Endereço</a>
+      <a href="#duvidas">Dúvidas</a>
+    </nav>
+    <div class="topo-acoes">
+      <p class="relogio"><span class="ponto-vivo" id="pontoTopo" aria-hidden="true"></span><span class="sr">Agora em Manaus: </span><time id="relogioTopo">00:00</time><small>Manaus</small></p>
+      <a class="btn" href="#" data-agendar>Agendar</a>
+      <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+    </div>
+  </div>
+  </div>
+</header>
+
+<main id="inicio">
+
+  <!-- CAPA: foto, título e barra com informações reais -->
+  <section class="capa" aria-labelledby="capaTit">
+    <figure class="capa-fundo" aria-hidden="true"><img src="img/interior.webp" width="1428" height="932" alt="" decoding="async"></figure>
+    <figure class="capa-foto">
+      <img src="img/capa-corte.webp" width="1448" height="1086" alt="Barbeiro de avental de couro cortando o cabelo de um cliente com a capa verde da Tezorine" fetchpriority="high">
+    </figure>
+    <div class="wrap capa-grade">
+      <h1 class="capa-tit" id="capaTit">Barbearia por assinatura. <span>Visual sempre alinhado.</span></h1>
+      <p class="lead capa-lead">Cabelo e barba sempre em dia pagando uma vez por mês. Mais praticidade, prioridade no atendimento e uma experiência pensada nos detalhes, na Zona Sul de Manaus.</p>
+      <div class="info-barra" aria-label="Informações e agendamento">
+        <div class="info-campo">
+          <span>Agora</span>
+          <b><i id="infoPonto" aria-hidden="true"></i><span id="infoStatus">Seg a sáb, 9h30 às 20h</span></b>
+        </div>
+        <a class="info-campo" href="#" data-maps>
+          <span>Endereço</span>
+          <b>Av. Silves, 1041</b>
+          <small>Raiz · Zona Sul</small>
+        </a>
+        <a class="info-campo" href="#planos">
+          <span>Planos</span>
+          <b>R$ 74,90/mês</b>
+          <small>a partir de</small>
+        </a>
+        <a class="btn btn--bloco" href="#" data-agendar>Agendar <svg class="seta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <ul class="capa-provas">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Sem fidelidade</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Atendimento prioritário</li>
+        <li><a class="link" href="#planos">Ver planos</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PLANOS: os três do post de assinatura (Instagram, 08/06/2026) -->
+  <section class="secao planos" id="planos" aria-labelledby="planTit">
+    <div class="wrap">
+      <div class="cab">
+        <h2 class="h2" id="planTit">Cabelo e barba sempre em dia. <span class="destaque">Pagando uma vez por mês.</span></h2>
+        <p class="lead">Escolha o plano, assine pela CashBarber e venha de segunda a sexta. Todos dão desconto em produtos e em serviços extras.</p>
+      </div>
+      <div class="carteiras carrossel" id="planosLista">
+        <article class="carteira">
+          <svg class="carteira-ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="14" cy="36" r="5"/><circle cx="34" cy="36" r="5"/><path d="M17.5 32.5L34 6M30.5 32.5L14 6"/></svg>
+          <h3><small>Plano</small>Corte</h3>
+          <p class="carteira-preco"><small>R$</small><b>74,90</b><span>/mês</span></p>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Corte sempre alinhado</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Qualquer corte</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>10% de desconto em produtos</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>10% de desconto em serviços extras</li>
+          </ul>
+          <a class="btn btn--linha btn--bloco" href="#" data-agendar>Assinar o Corte</a>
+          <p class="carteira-pe"><span>Válido <b>segunda a sexta</b></span><span>Sem fidelidade</span></p>
+        </article>
+        <article class="carteira carteira--destaque" id="planoDestaque">
+          <p class="carimbo" id="carimbo">Mais completo</p>
+          <svg class="carteira-ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="15" cy="13" r="4"/><circle cx="33" cy="13" r="4"/><path d="M18 15.5L30 30M30 15.5L18 30"/><path d="M9 24c0 10 6.5 17 15 17s15-7 15-17"/><path d="M17 33c2 1.6 4.4 2.4 7 2.4s5-.8 7-2.4"/></svg>
+          <h3><small>Plano</small>Corte e barba</h3>
+          <p class="carteira-preco"><small>R$</small><b>142,90</b><span>/mês</span></p>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Corte sempre alinhado</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Barba sempre alinhada</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Qualquer corte e barba</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>10% de desconto em produtos</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>10% de desconto em serviços extras</li>
+          </ul>
+          <a class="btn btn--ouro btn--bloco" href="#" data-agendar>Assinar Corte e barba</a>
+          <p class="carteira-pe"><span>Válido <b>segunda a sexta</b></span><span>Sem fidelidade</span></p>
+        </article>
+        <article class="carteira">
+          <svg class="carteira-ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 21c5-5 11-6 18-2 7-4 13-3 18 2-4 1-8 4-11 4s-5-2-7-2-4 2-7 2-7-3-11-4z"/><path d="M12 28c1 8 6 13 12 13s11-5 12-13"/></svg>
+          <h3><small>Plano</small>Barba</h3>
+          <p class="carteira-preco"><small>R$</small><b>84,90</b><span>/mês</span></p>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Barba sempre alinhada</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Qualquer barba</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>10% de desconto em produtos</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>10% de desconto em serviços extras</li>
+          </ul>
+          <a class="btn btn--linha btn--bloco" href="#" data-agendar>Assinar a Barba</a>
+          <p class="carteira-pe"><span>Válido <b>segunda a sexta</b></span><span>Sem fidelidade</span></p>
+        </article>
+      </div>
+      <div class="pontos" data-para="planosLista"></div>
+
+      <ul class="vantagens" aria-label="Vantagens da assinatura">
+        <li class="vantagem"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="6" width="24" height="22" rx="3"/><path d="M4 12h24M10 3v6M22 3v6M11 20l3.5 3.5L21 17"/></svg><div><b>Sem fidelidade</b><span>Cancele quando quiser</span></div></li>
+        <li class="vantagem"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="16" cy="10" r="5"/><path d="M6 28c1-6 5-9 10-9s9 3 10 9"/><circle cx="6.5" cy="13" r="3"/><circle cx="25.5" cy="13" r="3"/></svg><div><b>Atendimento prioritário</b><span>Para quem é assinante</span></div></li>
+        <li class="vantagem"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="16" cy="12" r="8"/><path d="M16 8l1.3 2.7 3 .4-2.2 2.1.5 3-2.6-1.4-2.6 1.4.5-3-2.2-2.1 3-.4z"/><path d="M11 19l-2 10 7-3 7 3-2-10"/></svg><div><b>Profissionais especializados</b><span>Barba, cabelo e bigode</span></div></li>
+        <li class="vantagem"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3h8M14 3v5h4V3"/><path d="M11 8h10l2 5v15a2 2 0 0 1-2 2H11a2 2 0 0 1-2-2V13z"/><path d="M16 17v6M13 20h6"/></svg><div><b>Produtos premium</b><span>No atendimento e na loja</span></div></li>
+      </ul>
+
+      <div class="comanda" id="calc" data-exemplo>
+        <div class="comanda-cab">
+          <h3>Vale a pena assinar?</h3>
+          <p><span class="selo-ex">Exemplo</span>Os planos são os reais. O preço avulso de cada serviço é de exemplo, até a barbearia confirmar a tabela.</p>
+        </div>
+        <div class="calc-escolhas">
+          <div class="calc-grupo"><span id="calcTipoRot">O que você faz</span><div class="segmentos" role="radiogroup" aria-labelledby="calcTipoRot" id="calcTipo"></div></div>
+          <div class="calc-grupo"><span id="calcVezesRot">Quantas vezes por mês</span><div class="segmentos" role="radiogroup" aria-labelledby="calcVezesRot" id="calcVezes"></div><p class="calc-dica">4 vezes por mês é uma vez por semana.</p></div>
+        </div>
+        <div class="calc-res" aria-live="polite">
+          <div class="barra"><p class="barra-topo"><span id="barAvulsoTxt"></span><b id="barAvulsoVal"></b></p><div class="barra-trilho"><i id="barAvulso"></i></div></div>
+          <div class="barra barra--plano"><p class="barra-topo"><span id="barPlanoTxt"></span><b id="barPlanoVal"></b></p><div class="barra-trilho"><i id="barPlano"></i></div></div>
+          <p class="calc-eco" id="calcEco"></p>
+          <a class="btn btn--bloco" href="#" id="calcBtn" data-agendar>Assinar</a>
+        </div>
+      </div>
+      <p class="letra-miuda">Assinatura e agendamento pela CashBarber. Sem fidelidade: cancele quando quiser. Planos válidos de segunda a sexta.</p>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS: preços avulsos de exemplo; limpeza de pele é serviço real (post de 06/06/2026) -->
+  <section class="secao secao--2 servicos" id="servicos" aria-labelledby="servTit" data-exemplo>
+    <div class="wrap">
+      <div class="cab">
+        <h2 class="h2" id="servTit">Serviços e preços</h2>
+        <p class="lead"><span class="selo-ex">Exemplo</span>Os valores abaixo são de exemplo. Assinantes têm 10% de desconto nos serviços extras.</p>
+      </div>
+      <div class="cats" id="tabela"></div>
+      <p class="nota">A tabela oficial e os horários livres ficam na CashBarber. <a class="link" href="#" data-agendar>Ver na CashBarber <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+    </div>
+  </section>
+
+  <!-- EXTRAS (exemplo) -->
+  <section class="secao secao--verde extras" id="extras" aria-labelledby="exTit" data-exemplo>
+    <div class="wrap">
+      <div class="cab">
+        <h2 class="h2" id="exTit">Extras de graça</h2>
+        <p class="lead"><span class="selo-ex">Exemplo</span>Mimos que podem vir junto com o atendimento.</p>
+      </div>
+      <ul class="extras-grade">
+        <li class="extra">
+          <span class="extra-ico" aria-hidden="true"><svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8.5" width="22" height="11" rx="2"/><path d="M9 14h10M3 12h2.5M3 16h2.5M22.5 12H25M22.5 16H25"/></svg></span>
+          <span class="extra-gratis">Grátis</span>
+          <h3>Lâmina nova em cada cliente</h3>
+          <p>Descartável, aberta na sua frente.</p>
+        </li>
+        <li class="extra">
+          <span class="extra-ico" aria-hidden="true"><svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19.5h18v3.5H5z"/><path d="M9 15.5c-1.5-1.8 1.5-3.2 0-5M14 15.5c-1.5-1.8 1.5-3.2 0-5M19 15.5c-1.5-1.8 1.5-3.2 0-5"/></svg></span>
+          <span class="extra-gratis">Grátis</span>
+          <h3>Toalha quente e lavagem</h3>
+          <p>Inclusas em todos os cortes.</p>
+        </li>
+        <li class="extra">
+          <span class="extra-ico" aria-hidden="true"><svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="14" cy="11" rx="6.5" ry="7.5"/><path d="M14 18.5v6M10.5 24.5h7"/><path d="M11.5 8.5c.8-1 1.8-1.5 3-1.5"/></svg></span>
+          <span class="extra-gratis">Grátis na 1ª visita</span>
+          <h3>Consulta de visagismo</h3>
+          <p>O corte certo para o seu rosto.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- GALERIA: fotos do Instagram @barbeariatezorine -->
+  <section class="secao" id="galeria" aria-labelledby="galTit">
+    <div class="wrap">
+      <div class="cab"><h2 class="h2" id="galTit">Por dentro da Tezorine</h2><p class="lead">Ambiente premium e atendimento de alto nível, na Av. Silves. Toque numa foto para ampliar.</p></div>
+      <div class="mosaico" id="galeriaLista"></div>
+    </div>
+  </section>
+
+  <!-- GARANTIA DE PONTUALIDADE (exemplo) -->
+  <section class="secao secao--2 garantia" id="pontualidade" aria-labelledby="garTit" data-exemplo>
+    <div class="wrap">
+      <div class="cab">
+        <h2 class="h2" id="garTit">Atrasou mais de 10 minutos? <span class="destaque">É por nossa conta.</span></h2>
+        <p class="lead"><span class="selo-ex">Exemplo</span>Uma ideia de garantia de pontualidade: se o atendimento começar mais de 10 minutos depois do horário marcado, o serviço sai por conta da casa.</p>
+      </div>
+      <p class="gar-exemplo">Horário marcado às 18:40</p>
+      <ol class="passos-gar">
+        <li class="passo-gar"><span class="pg-hora">18:40</span><div><h3>Seu horário</h3><p>Você chega na hora que marcou.</p></div></li>
+        <li class="passo-gar"><span class="pg-hora">18:50</span><div><h3>Nosso limite</h3><p>O atendimento começa em até 10 minutos.</p></div></li>
+        <li class="passo-gar passo-gar--gratis"><span class="pg-hora">18:51</span><div><h3>Por nossa conta</h3><p>Passou do limite, você não paga o serviço.</p></div></li>
+      </ol>
+      <div class="gar-rodape">
+        <a class="btn" href="#" data-agendar>Agendar horário <svg class="seta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <span class="gar-nota">Valeria para quem chega no horário.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- EQUIPE (exemplo: nomes e fotos ilustrativos) -->
+  <section class="secao" id="equipe" aria-labelledby="eqTit" data-exemplo>
+    <div class="wrap">
+      <div class="cab">
+        <h2 class="h2" id="eqTit">Quem vai cuidar do seu visual</h2>
+        <p class="lead"><span class="selo-ex">Exemplo</span>Nomes e fotos ilustrativos. Aqui entram os barbeiros da casa, cada um com sua especialidade.</p>
+      </div>
+      <div class="barbeiros carrossel" id="equipeLista"></div>
+      <div class="pontos" data-para="equipeLista"></div>
+    </div>
+  </section>
+
+  <!-- AVALIAÇÕES (exemplo) -->
+  <section class="secao secao--2" id="avaliacoes" aria-labelledby="avTit" data-exemplo>
+    <div class="wrap">
+      <div class="cab">
+        <h2 class="h2" id="avTit">O que os clientes dizem</h2>
+        <p class="lead"><span class="selo-ex">Exemplo</span>Depoimentos ilustrativos. Aqui entram avaliações reais dos clientes.</p>
+      </div>
+      <div class="depos">
+        <figure class="depo">
+          <span class="estrelas" role="img" aria-label="5 estrelas"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z"/></svg></span>
+          <blockquote>“Corte sempre alinhado e atendimento sem enrolação. Virei assinante no primeiro mês.”</blockquote>
+          <figcaption><b>Nome do cliente</b> · Plano Corte</figcaption>
+        </figure>
+        <figure class="depo">
+          <span class="estrelas" role="img" aria-label="5 estrelas"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z"/></svg></span>
+          <blockquote>“Ambiente bonito e a limpeza de pele vale muito a pena depois do corte.”</blockquote>
+          <figcaption><b>Nome do cliente</b> · Limpeza de pele</figcaption>
+        </figure>
+        <figure class="depo">
+          <span class="estrelas" role="img" aria-label="5 estrelas"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z"/></svg></span>
+          <blockquote>“Com o plano de corte e barba eu passo toda semana e o visual fica sempre em dia.”</blockquote>
+          <figcaption><b>Nome do cliente</b> · Plano Corte e barba</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENDEREÇO: dados reais (posts de 15/04 e 16/09/2026 e bio) -->
+  <section class="secao" id="endereco" aria-labelledby="unTit">
+    <div class="wrap">
+      <div class="cab">
+        <h2 class="h2" id="unTit">Na Zona Sul de Manaus</h2>
+        <p class="lead">Av. Silves, 1041, no bairro Raiz. De segunda a sábado, das 9h30 às 20h.</p>
+      </div>
+      <div class="local-grade">
+        <figure class="mapa">
+          <iframe src="https://www.google.com/maps?q=Av.+Silves,+1041+-+Raiz,+Manaus+-+AM&amp;z=16&amp;output=embed" title="Mapa: Barbearia Tezorine, Av. Silves, 1041, Raiz, Manaus" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </figure>
+        <div class="local-info">
+          <article class="local-card" id="localCard" aria-live="polite">
+            <div class="local-topo"><h3>Tezorine · Zona Sul</h3><p class="status" id="localStatus"><i aria-hidden="true"></i><span>Seg a sáb, 9h30 às 20h</span></p></div>
+            <address>Av. Silves, 1041 · Raiz<br>Zona Sul · Manaus, AM</address>
+            <div class="horas-tab" id="horasTab"></div>
+            <p class="info">Agendamento e assinatura pela CashBarber.</p>
+            <div class="acoes">
+              <a class="btn btn--peq" href="#" data-agendar>Agendar</a>
+              <a class="btn btn--linha btn--peq" href="#" data-maps>Abrir no Google Maps</a>
+            </div>
+          </article>
+          <div class="google-nota" data-exemplo>
+            <b>4,9</b>
+            <div><span class="estrelas" role="img" aria-label="5 estrelas"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z"/></svg></span><p><span class="selo-ex">Exemplo</span>Aqui entra a nota real do Google.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DÚVIDAS: respostas reais; as marcadas são de exemplo -->
+  <section class="secao secao--2" id="duvidas" aria-labelledby="dvTit">
+    <div class="wrap faq-grade">
+      <div class="cab">
+        <h2 class="h2" id="dvTit">Perguntas frequentes</h2>
+        <p class="lead">Não achou o que procurava? Chame no Instagram.</p>
+        <div><a class="btn btn--linha btn--peq" href="#" data-ig>Falar no Instagram</a></div>
+      </div>
+      <div class="faq">
+        <details><summary>Como funciona a assinatura?<i aria-hidden="true"></i></summary><p>Você paga um valor fixo por mês e mantém cabelo e barba sempre alinhados. São três planos: Corte (R$ 74,90), Barba (R$ 84,90) e Corte e barba (R$ 142,90), válidos de segunda a sexta.</p></details>
+        <details><summary>O plano tem fidelidade?<i aria-hidden="true"></i></summary><p>Não. A assinatura é sem fidelidade: você cancela quando quiser.</p></details>
+        <details><summary>Como faço para agendar ou assinar?<i aria-hidden="true"></i></summary><p>Pela CashBarber, em cashbarber.com.br/tezorine. Lá você escolhe o horário e conhece os planos.</p></details>
+        <details><summary>Assinante tem desconto?<i aria-hidden="true"></i></summary><p>Sim. Todos os planos dão 10% de desconto em produtos e 10% em serviços extras.</p></details>
+        <details><summary>Vocês fazem limpeza de pele?<i aria-hidden="true"></i></summary><p>Sim. A limpeza de pele cuida do visual além do corte: ajuda a remover impurezas e deixa a pele com aspecto mais saudável.</p></details>
+        <details><summary>Onde fica e qual o horário?<i aria-hidden="true"></i></summary><p>Av. Silves, 1041, no bairro Raiz, Zona Sul de Manaus. De segunda a sábado, das 9h30 às 20h.</p></details>
+        <details data-exemplo><summary><span>Posso chegar sem hora marcada? <span class="selo-ex">Exemplo</span></span><i aria-hidden="true"></i></summary><p>Resposta de exemplo: o encaixe acontece quando há cadeira livre, mas a prioridade é de quem agendou.</p></details>
+        <details data-exemplo><summary><span>Quais formas de pagamento aceitam? <span class="selo-ex">Exemplo</span></span><i aria-hidden="true"></i></summary><p>Resposta de exemplo: Pix, débito, crédito e dinheiro. A assinatura é paga pela CashBarber.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- FECHAMENTO -->
+  <section class="final" id="agendar" aria-labelledby="finalTit">
+    <div class="wrap final-grade">
+      <div class="final-txt">
+        <h2 id="finalTit">Sua melhor versão <span>aqui.</span></h2>
+        <p>Agende seu horário ou assine um plano pela CashBarber. Segunda a sábado, das 9h30 às 20h, na Av. Silves, 1041.</p>
+        <div class="ctas">
+          <a class="btn" href="#" data-agendar>Agendar na CashBarber <svg class="seta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="link" href="#planos">Ver planos</a>
+        </div>
+      </div>
+      <img class="final-logo" src="img/logo-grande.webp" width="480" height="480" loading="lazy" alt="Logo da Barbearia Tezorine: tesoura dourada sobre verde, com a frase Barba, cabelo e bigode">
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <div class="wrap">
+    <div class="rodape-grade">
+      <div>
+        <a class="marca" href="#inicio" aria-label="Barbearia Tezorine, voltar ao início">
+          <img class="icone" src="img/logo-icone.webp" width="176" height="176" alt="">
+          <img class="letreiro" src="img/logo-letreiro.webp" width="590" height="130" alt="">
+        </a>
+        <p>Barbearia por assinatura em Manaus. Barba, cabelo e bigode.</p>
+        <div class="sociais">
+          <a class="quadrado" href="#" data-ig aria-label="Instagram da Tezorine"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".8" fill="currentColor"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h3>Endereço</h3>
+        <ul>
+          <li><a href="#" data-maps>Av. Silves, 1041 · Raiz<br>Zona Sul · Manaus, AM</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contato</h3>
+        <ul>
+          <li>Agendamento<br><a href="#" data-agendar><b>cashbarber.com.br/tezorine</b></a></li>
+          <li>Instagram<br><a href="#" data-ig><b>@barbeariatezorine</b></a></li>
+        </ul>
+      </div>
+      <div class="largo">
+        <h3>Horário</h3>
+        <ul>
+          <li><b>Segunda a sábado</b><br>9h30 às 20h</li>
+        </ul>
+      </div>
+    </div>
+    <div class="rodape-fim">
+      <span>© <span id="ano">2026</span> Barbearia Tezorine®</span>
+      <span>Fotos: Instagram @barbeariatezorine · Equipe e avaliações: exemplos ilustrativos</span>
+    </div>
+  </div>
+</footer>
+
+<!-- botão flutuante: Instagram + agendar -->
+<div class="flutua oculto" id="flutua">
+  <a class="quadrado" href="#" data-ig aria-label="Instagram da Tezorine"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".8" fill="currentColor"/></svg></a>
+  <a class="fab" id="fab" href="#" data-agendar>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>
+    <span>Agendar horário</span>
+  </a>
+</div>
+
+<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Foto ampliada">
+  <div class="lb-topo"><span id="lbConta"></span><button class="quadrado" type="button" id="lbFechar" aria-label="Fechar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <div class="lb-img" id="lbImgBox"></div>
+  <div class="lb-base">
+    <p id="lbLeg"></p>
+    <div class="lb-nav">
+      <button class="quadrado" type="button" id="lbAnt" aria-label="Foto anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+      <button class="quadrado" type="button" id="lbProx" aria-label="Próxima foto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+    </div>
+  </div>
+</div>
+
+<script>
+/* =====================================================================
+   DADOS DA BARBEARIA — fonte: Instagram @barbeariatezorine e cashbarber.com.br/tezorine.
+   O que tem "exemplo: true" ainda precisa ser confirmado pela barbearia.
+   ===================================================================== */
+window.BARBEARIA = {
+  nome: 'Barbearia Tezorine',
+  agendar: 'https://cashbarber.com.br/tezorine',   // agendamento e assinatura (bio do Instagram)
+  instagram: 'barbeariatezorine',
+  endereco: 'Av. Silves, 1041 - Raiz, Manaus - AM',
+  fuso: 'America/Manaus',
+  // segunda (1) a sábado (6), das 9h30 às 20h — em minutos desde a meia-noite
+  horas: { 1: [570, 1200], 2: [570, 1200], 3: [570, 1200], 4: [570, 1200], 5: [570, 1200], 6: [570, 1200] },
+  planos: [
+    { id: 'corte', nome: 'Corte', valor: 74.90 },
+    { id: 'barba', nome: 'Barba', valor: 84.90 },
+    { id: 'combo', nome: 'Corte e barba', valor: 142.90 }
+  ],
+  // preços avulsos: EXEMPLO
+  servicos: [
+    { grupo: 'Cabelo', nome: 'Corte', preco: 45 },
+    { grupo: 'Cabelo', nome: 'Degradê', preco: 50 },
+    { grupo: 'Cabelo', nome: 'Corte infantil', preco: 40 },
+    { grupo: 'Cabelo', nome: 'Pezinho e acabamento', preco: 20 },
+    { grupo: 'Barba', nome: 'Barba', preco: 35 },
+    { grupo: 'Barba', nome: 'Barba desenhada', preco: 35 },
+    { grupo: 'Barba', nome: 'Bigode', preco: 15 },
+    { grupo: 'Combos', nome: 'Corte e barba', preco: 75 },
+    { grupo: 'Combos', nome: 'Corte, barba e sobrancelha', preco: 85 },
+    { grupo: 'Cuidados', nome: 'Limpeza de pele', preco: 60, tag: 'Serviço da casa' },
+    { grupo: 'Cuidados', nome: 'Sobrancelha', preco: 15 },
+    { grupo: 'Cuidados', nome: 'Hidratação', preco: 35 }
+  ],
+  // equipe: EXEMPLO (nomes e fotos ilustrativos)
+  barbeiros: [
+    { nome: 'Caio Menezes', especialidade: 'Degradê e acabamento na navalha.', desde: 2014, foto: 'img/equipe/caio.jpg' },
+    { nome: 'Rafael Santana', especialidade: 'Barba com toalha quente e desenho.', desde: 2012, foto: 'img/equipe/rafael.jpg' },
+    { nome: 'Lucas Ferreira', especialidade: 'Cabelo crespo e cacheado.', desde: 2017, foto: 'img/equipe/lucas.jpg' }
+  ],
+  // fotos reais do Instagram
+  galeria: [
+    { img: 'img/g-salao.webp', w: 1440, h: 970, pos: '30% 50%', titulo: 'O salão', det: 'Av. Silves, Zona Sul', alt: 'Salão da Tezorine com barbeiros atendendo clientes de capa verde, televisões e cadeiras pretas' },
+    { img: 'img/g-limpeza.webp', w: 1383, h: 904, pos: '42% 50%', titulo: 'Limpeza de pele', det: 'Cuidado além do corte', alt: 'Cliente reclinado recebendo vapor no rosto durante a limpeza de pele, com a capa verde da Tezorine' },
+    { img: 'img/g-corte.webp', w: 1155, h: 892, pos: '78% 50%', titulo: 'Na cadeira', det: 'Visual sempre alinhado', alt: 'Barbeiro de avental de couro cortando o cabelo de um cliente diante da bancada de produtos' },
+    { img: 'img/g-barbeiro.webp', w: 512, h: 590, pos: '50% 40%', titulo: 'Atendimento', det: 'Barba, cabelo e bigode', alt: 'Barbeiro aparando o cabelo de um cliente sentado com a capa verde da Tezorine' },
+    { img: 'img/g-capas.webp', w: 1600, h: 1200, pos: '40% 50%', titulo: 'Capas verdes', det: 'A cor da casa', alt: 'Fila de clientes com as capas verdes da Tezorine sendo atendidos pelos barbeiros' },
+    { img: 'img/g-cadeira.webp', w: 1230, h: 1394, pos: '35% 45%', titulo: 'Cadeira Tezorine', det: 'Ambiente premium', alt: 'Cadeira de barbeiro preta acolchoada com a placa Tezorine no encosto' }
+  ]
+};
+</script>
+
+<script>
+(() => {
+  const D = window.BARBEARIA;
+  const $ = s => document.querySelector(s);
+  const $$ = s => [...document.querySelectorAll(s)];
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const reduzido = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const SETA = '<svg class="seta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
+  const DIAS = ['domingo', 'segunda', 'terça', 'quarta', 'quinta', 'sexta', 'sábado'];
+  const brl = v => 'R$ ' + v.toLocaleString('pt-BR', { minimumFractionDigits: Number.isInteger(v) ? 0 : 2, maximumFractionDigits: 2 });
+  const hora = m => { const h = Math.floor(m / 60), mm = m % 60; return h + 'h' + (mm ? String(mm).padStart(2, '0') : ''); };
+
+  /* ---------- hora de Manaus (o status não depende do fuso de quem visita) ---------- */
+  const fmt = new Intl.DateTimeFormat('pt-BR', { timeZone: D.fuso, weekday: 'short', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' });
+  const DIA_CURTO = { dom: 0, seg: 1, ter: 2, qua: 3, qui: 4, sex: 5, 'sáb': 6, sab: 6 };
+  function agoraManaus() {
+    const p = Object.fromEntries(fmt.formatToParts(new Date()).map(x => [x.type, x.value]));
+    const dia = DIA_CURTO[p.weekday.replace('.', '').toLowerCase()] ?? new Date().getDay();
+    return { dia, min: (+p.hour) * 60 + (+p.minute), txt: p.hour + ':' + p.minute };
+  }
+  function status() {
+    const a = agoraManaus(), f = D.horas[a.dia];
+    if (f && a.min >= f[0] && a.min < f[1]) return { aberto: true, txt: 'Aberto agora · até ' + hora(f[1]) };
+    if (f && a.min < f[0]) return { aberto: false, txt: 'Fechado · abre hoje às ' + hora(f[0]) };
+    for (let i = 1; i <= 7; i++) { const d = (a.dia + i) % 7; if (D.horas[d]) return { aberto: false, txt: 'Fechado · abre ' + (i === 1 ? 'amanhã' : DIAS[d]) + ' às ' + hora(D.horas[d][0]) }; }
+    return { aberto: false, txt: 'Fechado' };
+  }
+  function tic() {
+    const a = agoraManaus(), st = status();
+    const r = $('#relogioTopo'); if (r.textContent !== a.txt) { r.textContent = a.txt; r.dateTime = a.txt; }
+    $('#pontoTopo').classList.toggle('fechado', !st.aberto);
+    $('#infoStatus').textContent = st.txt;
+    $('#infoPonto').classList.toggle('aberto', st.aberto);
+    const ls = $('#localStatus'); ls.classList.toggle('aberto', st.aberto); ls.querySelector('span').textContent = st.txt;
+    $$('#horasTab div').forEach(div => div.classList.toggle('hoje', div.dataset.dias.split(',').map(Number).includes(a.dia)));
+  }
+
+  /* ---------- tabela de horários (agrupa dias iguais) ---------- */
+  (function () {
+    const gs = [];
+    [1, 2, 3, 4, 5, 6, 0].forEach(d => {
+      const f = D.horas[d], txt = f ? hora(f[0]) + ' às ' + hora(f[1]) : null;
+      if (!txt) return;
+      const ult = gs[gs.length - 1];
+      if (ult && ult.txt === txt) ult.dias.push(d); else gs.push({ dias: [d], txt });
+    });
+    const cap = s => s[0].toUpperCase() + s.slice(1);
+    $('#horasTab').innerHTML = gs.map(g => `<div data-dias="${g.dias.join(',')}"><span>${g.dias.length > 1 ? cap(DIAS[g.dias[0]]) + ' a ' + DIAS[g.dias[g.dias.length - 1]] : cap(DIAS[g.dias[0]])}</span><span>${g.txt}</span></div>`).join('');
+  })();
+  tic(); setInterval(tic, 15000);
+  $('#ano').textContent = new Date().getFullYear();
+
+  /* ---------- links reais: CashBarber, Instagram e Google Maps ---------- */
+  const mapsLink = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(D.endereco);
+  function ligarLinks(root = document) {
+    root.querySelectorAll('[data-agendar]').forEach(a => { a.href = D.agendar; a.target = '_blank'; a.rel = 'noopener'; });
+    root.querySelectorAll('[data-ig]').forEach(a => { a.href = 'https://www.instagram.com/' + D.instagram + '/'; a.target = '_blank'; a.rel = 'noopener'; });
+    root.querySelectorAll('[data-maps]').forEach(a => { a.href = mapsLink; a.target = '_blank'; a.rel = 'noopener'; });
+  }
+
+  /* ---------- menu do celular ---------- */
+  const topo = $('#topo'), menuBtn = $('#menuBtn');
+  function menu(aberto) { topo.classList.toggle('aberto', aberto); menuBtn.setAttribute('aria-expanded', aberto); menuBtn.textContent = aberto ? 'Fechar' : 'Menu'; }
+  menuBtn.addEventListener('click', () => menu(!topo.classList.contains('aberto')));
+  $('#menu').addEventListener('click', e => { if (e.target.closest('a')) menu(false); });
+
+  /* ---------- menu: marca a seção visível ---------- */
+  const secoes = ['planos', 'servicos', 'galeria', 'endereco', 'duvidas'].map(id => document.getElementById(id));
+  function marcarSecao(id) { $$('.menu a').forEach(a => a.setAttribute('aria-current', a.getAttribute('href') === '#' + id)); }
+  if ('IntersectionObserver' in window) {
+    const vis = new Map();
+    const io = new IntersectionObserver(ents => {
+      ents.forEach(en => vis.set(en.target.id, en.isIntersecting));
+      const atual = secoes.find(s => vis.get(s.id));
+      marcarSecao(atual ? atual.id : '');
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    secoes.forEach(s => io.observe(s));
+  }
+
+  /* ---------- carrosséis com pontos (celular) ---------- */
+  function ligarCarrossel(lista) {
+    const pontos = document.querySelector(`.pontos[data-para="${lista.id}"]`);
+    if (!pontos) return;
+    const itens = [...lista.children];
+    pontos.innerHTML = itens.map((_, i) => `<button type="button" aria-label="Item ${i + 1} de ${itens.length}"></button>`).join('');
+    const bts = [...pontos.children];
+    bts.forEach((b, i) => b.addEventListener('click', () => lista.scrollTo({ left: itens[i].offsetLeft - itens[0].offsetLeft, behavior: reduzido() ? 'auto' : 'smooth' })));
+    const marcar = () => {
+      const passo = itens.length > 1 ? itens[1].offsetLeft - itens[0].offsetLeft : 1;
+      const i = Math.max(0, Math.min(itens.length - 1, Math.round(lista.scrollLeft / (passo || 1))));
+      bts.forEach((b, k) => b.setAttribute('aria-current', k === i));
+    };
+    lista.addEventListener('scroll', () => requestAnimationFrame(marcar), { passive: true });
+    marcar();
+  }
+
+  /* ---------- tabela de serviços (exemplo) ---------- */
+  const grupos = [...new Set(D.servicos.map(s => s.grupo))];
+  const ICONE_GRUPO = {
+    Cabelo: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="6" cy="6.5" r="2.6"/><circle cx="6" cy="17.5" r="2.6"/><path d="M8.3 8L20 17M8.3 16L20 7"/></svg>',
+    Barba: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 14.5L14 5.5c1.3-1.1 3.3-.3 3.4 1.4l.1 1.1L6 17.5H3.5z"/><path d="M13 10.5l7.5 7"/></svg>',
+    Combos: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="9" cy="12" r="5.5"/><circle cx="15" cy="12" r="5.5"/></svg>',
+    Cuidados: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M12 3.5c3.4 3.9 5.8 7 5.8 10a5.8 5.8 0 0 1-11.6 0c0-3 2.4-6.1 5.8-10z"/></svg>'
+  };
+  $('#tabela').innerHTML = grupos.map(g => `
+    <article class="cat" aria-labelledby="cat-${esc(g)}">
+      <header class="cat-cab"><span class="cat-ico" aria-hidden="true">${ICONE_GRUPO[g] || ''}</span><h3 id="cat-${esc(g)}">${esc(g)}</h3></header>
+      <ul class="cat-lista">${D.servicos.filter(s => s.grupo === g).map(s => `
+        <li class="cat-item"><span class="ci-nome">${esc(s.nome)}${s.tag ? `<em>${esc(s.tag)}</em>` : ''}</span><span class="ci-preco">${brl(s.preco)}</span></li>`).join('')}</ul>
+    </article>`).join('');
+
+  /* ---------- galeria com foto ampliada ---------- */
+  const foto = i => { const g = D.galeria[i]; return `
+    <figure class="m m${i + 1}"${i === 1 || i === 4 ? ' data-fx-paralaxe="0.06"' : ''}>
+      <button type="button" data-foto="${i}" aria-label="Ampliar foto: ${esc(g.titulo)}"><img src="${g.img}" width="${g.w}" height="${g.h}" loading="lazy" alt="${esc(g.alt)}" style="object-position:${g.pos}"></button>
+      <figcaption><b>${esc(g.titulo)}</b><span>${esc(g.det)}</span></figcaption>
+    </figure>`; };
+  /* três colunas no desktop (colagem); no celular as colunas somem e a ordem volta a 1-6 */
+  $('#galeriaLista').innerHTML = [[0, 5], [1, 3], [2, 4]].map((col, k) => `<div class="mcol mcol${k + 1}">${col.map(foto).join('')}${k === 2 ? `<a class="mosaico-ig" href="#" data-ig>Mais no Instagram <span>@${esc(D.instagram)}</span>${SETA}</a>` : ''}</div>`).join('');
+  const lb = $('#lightbox');
+  let fotoAtual = 0, focoLb = null, toqueX = null;
+  function mostrarFoto(i) {
+    fotoAtual = (i + D.galeria.length) % D.galeria.length;
+    const g = D.galeria[fotoAtual];
+    let img = $('#lbImg');
+    if (!img) { img = document.createElement('img'); img.id = 'lbImg'; $('#lbImgBox').append(img); }
+    img.src = g.img; img.alt = g.alt;
+    $('#lbLeg').innerHTML = `${esc(g.titulo)}<span>${esc(g.det)}</span>`;
+    $('#lbConta').textContent = String(fotoAtual + 1).padStart(2, '0') + ' / ' + String(D.galeria.length).padStart(2, '0');
+  }
+  function abrirLb(i) { focoLb = document.activeElement; mostrarFoto(i); lb.hidden = false; document.body.style.overflow = 'hidden'; atualizarFlutua(); $('#lbFechar').focus(); }
+  function fecharLb() { lb.hidden = true; document.body.style.overflow = ''; atualizarFlutua(); if (focoLb) focoLb.focus(); }
+  $('#galeriaLista').addEventListener('click', e => { const b = e.target.closest('[data-foto]'); if (b) abrirLb(+b.dataset.foto); });
+  $('#lbFechar').addEventListener('click', fecharLb);
+  $('#lbAnt').addEventListener('click', () => mostrarFoto(fotoAtual - 1));
+  $('#lbProx').addEventListener('click', () => mostrarFoto(fotoAtual + 1));
+  lb.addEventListener('touchstart', e => { toqueX = e.touches[0].clientX; }, { passive: true });
+  lb.addEventListener('touchend', e => { if (toqueX === null) return; const dx = e.changedTouches[0].clientX - toqueX; if (Math.abs(dx) > 50) mostrarFoto(fotoAtual + (dx < 0 ? 1 : -1)); toqueX = null; });
+
+  /* ---------- comanda: vale a pena assinar? (planos reais x avulso de exemplo) ---------- */
+  const avulso = nome => (D.servicos.find(s => s.nome === nome) || {}).preco;
+  const CALC_TIPOS = [
+    { id: 'corte', nome: 'Corte', avulso: avulso('Corte'), rotulo: 'corte' },
+    { id: 'barba', nome: 'Barba', avulso: avulso('Barba'), rotulo: 'barba' },
+    { id: 'combo', nome: 'Corte e barba', avulso: avulso('Corte e barba'), rotulo: 'corte e barba' }
+  ].map(t => ({ ...t, plano: D.planos.find(p => p.id === t.id) }));
+  const calc = { tipo: 'combo', vezes: 2 };
+  function renderCalc() {
+    $('#calcTipo').innerHTML = CALC_TIPOS.map(t => `<button class="opcao" type="button" role="radio" aria-checked="${calc.tipo === t.id}" data-calc="tipo" data-v="${t.id}">${t.nome}</button>`).join('');
+    $('#calcVezes').innerHTML = [1, 2, 3, 4].map(n => `<button class="opcao" type="button" role="radio" aria-checked="${calc.vezes === n}" data-calc="vezes" data-v="${n}">${n}x</button>`).join('');
+    const t = CALC_TIPOS.find(x => x.id === calc.tipo), n = calc.vezes, total = n * t.avulso, valor = t.plano.valor, maior = Math.max(total, valor);
+    $('#barAvulsoTxt').textContent = `Avulso (exemplo) · ${n} × ${brl(t.avulso)}`;
+    $('#barAvulsoVal').textContent = brl(total);
+    $('#barPlanoTxt').textContent = `Plano ${t.plano.nome} · valor fixo`;
+    $('#barPlanoVal').textContent = brl(valor);
+    $('#barAvulso').style.setProperty('--w', (total / maior * 100).toFixed(1) + '%');
+    $('#barPlano').style.setProperty('--w', (valor / maior * 100).toFixed(1) + '%');
+    const btn = $('#calcBtn'), eco = $('#calcEco');
+    if (total > valor) {
+      eco.classList.remove('neutro');
+      eco.innerHTML = `Você economiza <b>${brl(Math.round((total - valor) * 100) / 100)}</b> por mês.`;
+      btn.textContent = `Assinar o plano ${t.plano.nome}`;
+    } else {
+      eco.classList.add('neutro');
+      eco.textContent = 'Nesse ritmo, pagar avulso sai mais barato. É só agendar quando precisar.';
+      btn.textContent = 'Agendar avulso';
+    }
+  }
+  $('#calc').addEventListener('click', e => {
+    const b = e.target.closest('[data-calc]'); if (!b) return;
+    calc[b.dataset.calc] = b.dataset.calc === 'vezes' ? +b.dataset.v : b.dataset.v;
+    renderCalc();
+    const nb = $(`[data-calc="${b.dataset.calc}"][data-v="${b.dataset.v}"]`); if (nb) nb.focus();
+  });
+
+  /* ---------- equipe (exemplo) ---------- */
+  $('#equipeLista').innerHTML = D.barbeiros.map(b => `
+    <article class="barbeiro">
+      <figure><img src="${b.foto}" width="720" height="900" loading="lazy" alt="Foto ilustrativa de barbeiro (${esc(b.nome)})"></figure>
+      <h3>${esc(b.nome)}</h3>
+      <p>${esc(b.especialidade)}</p>
+      <p class="meta">Na cadeira desde <b>${b.desde}</b></p>
+      <a class="link" href="#" data-agendar>Agendar ${SETA}</a>
+    </article>`).join('');
+
+  /* ---------- carimbo do plano em destaque ---------- */
+  const dest = $('#planoDestaque');
+  if (!reduzido() && 'IntersectionObserver' in window) {
+    $('#carimbo').classList.add('pre');
+    const io = new IntersectionObserver(ents => { if (ents[0].isIntersecting) { $('#carimbo').classList.remove('pre'); dest.classList.add('carimbado'); io.disconnect(); } }, { threshold: .55 });
+    io.observe(dest);
+  }
+
+  /* ---------- botão flutuante: aparece depois da capa; fica branco sobre o verde ---------- */
+  let capaVisivel = true;
+  function atualizarFlutua() { $('#flutua').classList.toggle('oculto', capaVisivel || !lb.hidden); }
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(ents => { capaVisivel = ents[0].isIntersecting; atualizarFlutua(); }, { rootMargin: '0px 0px -35% 0px' }).observe($('.capa'));
+    const verdes = new Set();
+    const ioVerde = new IntersectionObserver(ents => { ents.forEach(en => en.isIntersecting ? verdes.add(en.target) : verdes.delete(en.target)); $('#flutua').classList.toggle('sobre-verde', verdes.size > 0); }, { rootMargin: '-86% 0px 0px 0px' });
+    $$('.secao--verde, .final').forEach(s => ioVerde.observe(s));
+  } else { capaVisivel = false; }
+
+  /* ---------- 3D discreto: foto da capa e cartões dos planos acompanham o ponteiro ---------- */
+  if (!reduzido() && matchMedia('(pointer: fine)').matches) {
+    const capaEl = $('.capa'), fotoEl = $('.capa-foto img');
+    capaEl.addEventListener('pointermove', e => {
+      const r = capaEl.getBoundingClientRect(), x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
+      fotoEl.style.setProperty('--ry', (x * -3).toFixed(2) + 'deg'); fotoEl.style.setProperty('--rx', (y * 2.4).toFixed(2) + 'deg');
+    });
+    capaEl.addEventListener('pointerleave', () => { fotoEl.style.setProperty('--ry', '0deg'); fotoEl.style.setProperty('--rx', '0deg'); });
+    $$('.carteira').forEach(c => {
+      c.addEventListener('pointermove', e => {
+        const r = c.getBoundingClientRect(), x = (e.clientX - r.left) / r.width, y = (e.clientY - r.top) / r.height;
+        c.style.setProperty('--ry', ((x - .5) * 7).toFixed(2) + 'deg'); c.style.setProperty('--rx', ((.5 - y) * 6).toFixed(2) + 'deg');
+        c.style.setProperty('--mx', (x * 100).toFixed(1) + '%'); c.style.setProperty('--my', (y * 100).toFixed(1) + '%');
+        c.classList.add('inclinada');
+      });
+      c.addEventListener('pointerleave', () => { c.style.setProperty('--ry', '0deg'); c.style.setProperty('--rx', '0deg'); c.classList.remove('inclinada'); });
+    });
+    /* ímã leve nos botões principais */
+    $$('.capa .btn, .topo-acoes .btn, .final .btn, .fab').forEach(b => {
+      b.addEventListener('pointermove', e => {
+        const r = b.getBoundingClientRect(), dx = e.clientX - (r.left + r.width / 2), dy = e.clientY - (r.top + r.height / 2);
+        b.style.translate = `${(dx * .14).toFixed(1)}px ${(dy * .22).toFixed(1)}px`;
+      });
+      b.addEventListener('pointerleave', () => { b.style.translate = '0 0'; });
+    });
+  }
+
+  /* ---------- paralaxe leve em duas fotos da galeria ---------- */
+  if (!reduzido() && matchMedia('(min-width: 900px)').matches) {
+    const fotos = $$('[data-fx-paralaxe]');
+    let pendente = false;
+    const mover = () => {
+      pendente = false;
+      const meio = innerHeight / 2;
+      fotos.forEach(el => {
+        const r = el.getBoundingClientRect(), f = parseFloat(el.dataset.fxParalaxe) || .06;
+        const y = Math.max(-26, Math.min(26, (r.top + r.height / 2 - meio) * -f)); // no máximo 26px, para nunca encostar na foto de cima
+        el.style.transform = 'translateY(' + y.toFixed(1) + 'px)';
+      });
+    };
+    const agendar = () => { if (!pendente) { pendente = true; requestAnimationFrame(mover); } };
+    addEventListener('scroll', agendar, { passive: true });
+    addEventListener('resize', agendar);
+    agendar();
+  }
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') { if (!lb.hidden) fecharLb(); else if (topo.classList.contains('aberto')) { menu(false); menuBtn.focus(); } }
+    if (!lb.hidden && e.key === 'ArrowRight') mostrarFoto(fotoAtual + 1);
+    if (!lb.hidden && e.key === 'ArrowLeft') mostrarFoto(fotoAtual - 1);
+  });
+
+  renderCalc();
+  atualizarFlutua();
+  ['planosLista', 'equipeLista'].forEach(id => ligarCarrossel(document.getElementById(id)));
+  const planos = $('#planosLista');
+  if (planos.scrollWidth > planos.clientWidth) planos.scrollLeft = dest.offsetLeft - planos.firstElementChild.offsetLeft;
+  ligarLinks();
+})();
+</script>
+</body>
+</html>
